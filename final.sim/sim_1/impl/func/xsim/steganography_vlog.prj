@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../final.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../final.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../../final.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" --include "../../../../../final.gen/sources_1/bd/design_1/ipshared/f805/hdl" --include "C:/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"steganography_func_impl.v" \
+"../../../../../../Downloads/Steganography-main/Steganography-main/src/control_unit.v" \
+"../../../../../../Downloads/Steganography-main/Steganography-main/src/ctrl_rd_bram.v" \
+"../../../../../../Downloads/Steganography-main/Steganography-main/src/ctrl_wr_bram.v" \
+"../../../../../../Downloads/Steganography-main/Steganography-main/src/fifo.v" \
+"../../../../../../Downloads/Steganography-main/Steganography-main/src/sgpp.v" \
+"../../../../../../Downloads/Steganography-main/Steganography-main/src/steganography.v" \
+
+# Do not sort compile order
+nosort

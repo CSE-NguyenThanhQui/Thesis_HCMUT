@@ -1,0 +1,140 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "design_1_bram_ctrl_0_0",
+    "cell_name": "bram_ctrl_0",
+    "component_reference": "xilinx.com:module_ref:bram_ctrl:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../final.gen/sources_1/bd/design_1/ip/design_1_bram_ctrl_0_0",
+    "parameters": {
+      "component_parameters": {
+        "ADDR_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "NUM_BYTES": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "design_1_bram_ctrl_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "ADDR_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "NUM_BYTES": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynquplus" } ],
+        "BASE_BOARD_PART": [ { "value": "avnet.com:ultra96v2:part0:1.2" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xczu3eg" } ],
+        "PACKAGE": [ { "value": "sbva484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "I" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../final.gen/sources_1/bd/design_1/ip/design_1_bram_ctrl_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "ps_enb": [ { "direction": "in" } ],
+        "en": [ { "direction": "out" } ],
+        "rddata": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "8" } ],
+        "wrdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "we": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "addr": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "clk": [ { "direction": "out" } ],
+        "rst": [ { "direction": "out" } ],
+        "ps_en": [ { "direction": "in" } ],
+        "ps_dout": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "ps_din": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "8" } ],
+        "ps_we": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "ps_addr": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "ps_clk": [ { "direction": "in" } ],
+        "ps_rst": [ { "direction": "in" } ],
+        "pl_en": [ { "direction": "in" } ],
+        "pl_dout": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "pl_din": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "8" } ],
+        "pl_we": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "pl_addr": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "pl_clk": [ { "direction": "in" } ],
+        "pl_rst": [ { "direction": "in" } ]
+      },
+      "interfaces": {
+        "BRAM_PORTA": {
+          "vlnv": "xilinx.com:interface:bram:1.0",
+          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "MASTER_TYPE": [ { "value": "BRAM_CTRL", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_ECC": [ { "value": "NONE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd_and_user", "format": "long", "usage": "all" } ],
+            "MEM_SIZE": [ { "value": "262144", "value_src": "constant", "value_permission": "bd_and_user", "format": "long", "usage": "all" } ],
+            "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "READ_LATENCY": [ { "value": "1", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "EN": [ { "physical_name": "en" } ],
+            "DOUT": [ { "physical_name": "rddata" } ],
+            "DIN": [ { "physical_name": "wrdata" } ],
+            "WE": [ { "physical_name": "we" } ],
+            "ADDR": [ { "physical_name": "addr" } ],
+            "CLK": [ { "physical_name": "clk" } ],
+            "RST": [ { "physical_name": "rst" } ]
+          }
+        },
+        "BRAM_CTRLA": {
+          "vlnv": "xilinx.com:interface:bram:1.0",
+          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "MASTER_TYPE": [ { "value": "BRAM_CTRL", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_ECC": [ { "value": "NONE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd_and_user", "format": "long", "usage": "all" } ],
+            "MEM_SIZE": [ { "value": "262144", "value_src": "constant", "value_permission": "bd_and_user", "format": "long", "usage": "all" } ],
+            "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "READ_LATENCY": [ { "value": "1", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "EN": [ { "physical_name": "ps_en" } ],
+            "DOUT": [ { "physical_name": "ps_dout" } ],
+            "DIN": [ { "physical_name": "ps_din" } ],
+            "WE": [ { "physical_name": "ps_we" } ],
+            "ADDR": [ { "physical_name": "ps_addr" } ],
+            "CLK": [ { "physical_name": "ps_clk" } ],
+            "RST": [ { "physical_name": "ps_rst" } ]
+          }
+        },
+        "BRAM_CTRLB": {
+          "vlnv": "xilinx.com:interface:bram:1.0",
+          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "MASTER_TYPE": [ { "value": "BRAM_CTRL", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_ECC": [ { "value": "NONE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd_and_user", "format": "long", "usage": "all" } ],
+            "MEM_SIZE": [ { "value": "262144", "value_src": "constant", "value_permission": "bd_and_user", "format": "long", "usage": "all" } ],
+            "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "READ_LATENCY": [ { "value": "1", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "EN": [ { "physical_name": "pl_en" } ],
+            "DOUT": [ { "physical_name": "pl_dout" } ],
+            "DIN": [ { "physical_name": "pl_din" } ],
+            "WE": [ { "physical_name": "pl_we" } ],
+            "ADDR": [ { "physical_name": "pl_addr" } ],
+            "CLK": [ { "physical_name": "pl_clk" } ],
+            "RST": [ { "physical_name": "pl_rst" } ]
+          }
+        }
+      }
+    }
+  }
+}

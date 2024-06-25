@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Feb 25 12:59:32 2024
+# Process ID: 20804
+# Current directory: C:/Users/VICTUS/final_2_3_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22356 C:\Users\VICTUS\final_2_3_1\final.xpr
+# Log file: C:/Users/VICTUS/final_2_3_1/vivado.log
+# Journal file: C:/Users/VICTUS/final_2_3_1\vivado.jou
+# Running On: LAPTOP-NS7LM8D6, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 7739 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/VICTUS/final_2_3_1/final.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/VICTUS/final_2_3_1/final.srcs/sources_1/bd/design_1/design_1.bd}
+report_clock_networks
+open_run impl_1
+report_clock_networks
+open_bd_design {C:/Users/VICTUS/final_2_3_1/final.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property CONFIG.PSU__PSS_REF_CLK__FREQMHZ {33.333333} [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.PSU__DP__REF_CLK_FREQ {108} \
+  CONFIG.PSU__PSS_REF_CLK__FREQMHZ {33.333333} \
+  CONFIG.PSU__USB0__REF_CLK_FREQ {52} \
+  CONFIG.PSU__USB1__REF_CLK_FREQ {52} \
+] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.PSU__DP__REF_CLK_FREQ {27} \
+  CONFIG.PSU__PSS_REF_CLK__FREQMHZ {33.333333} \
+  CONFIG.PSU__USB0__REF_CLK_FREQ {26} \
+  CONFIG.PSU__USB1__REF_CLK_FREQ {26} \
+] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup

@@ -1,0 +1,38 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L xilinx_vip -L simprims_ver -L secureip --snapshot steganography_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.steganography xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'control_signal' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:141]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'picture_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:142]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'message_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:143]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'respond_signal' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:144]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'pixel_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:151]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'secret_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:152]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'output_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:153]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'data_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:161]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'rddata' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:163]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'addr' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:164]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'data_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:175]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'rddata' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:177]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'addr' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:178]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'debug_data' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:209]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'data_size' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:245]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'image_wrdata' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:247]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'image_addr' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:248]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'secret_wrdata' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:251]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'secret_addr' [C:/Users/VICTUS/Downloads/Steganography-main/Steganography-main/src/steganography.v:252]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.ctrl_rd_bram
+Compiling module xil_defaultlib.fifo_default
+Compiling module xil_defaultlib.sgpp
+Compiling module xil_defaultlib.ctrl_wr_bram
+Compiling module xil_defaultlib.steganography
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steganography_time_impl
